@@ -1,0 +1,48 @@
+{
+  "name": "angelhack-2018-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db": "mongod --port 1235 --dbpath ./mongodb",
+    "start": "./node_modules/.bin/nodemon ./service/index.js --exec babel-node --presets es2015,stage-2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^2.0.1",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "hat": "^0.0.3",
+    "hbs": "~4.0.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1",
+    "mongoose": "^5.0.17",
+    "morgan": "^1.9.0",
+    "node-fetch": "^2.1.2",
+    "ramda": "^0.24.1",
+    "serve-favicon": "~2.4.2",
+    "shortid": "^2.2.8",
+    "validator": "^10.4.0",
+    "xlsx": "^0.11.13"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "colors": "^1.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "nodemon": "^1.11.0"
+  }
+}

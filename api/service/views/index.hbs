@@ -1,0 +1,15 @@
+<script>
+  document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+      var objDiv = document.getElementById("log_wrapper");
+      objDiv.scrollTop = objDiv.scrollHeight;
+    }
+  };
+
+</script>
+<div>Ram : {{ram}}</div>
+<div id="log_wrapper" style="height: 400px; overflow-y: scroll">
+  <pre>{{msg}}</pre>
+</div>
+<button>Reset</button>
+<button onclick="location.reload();">Reload</button>
