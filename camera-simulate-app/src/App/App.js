@@ -10,7 +10,7 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       requestAnimationFrame(this._renderCanvas);
-    }, 2000);
+  }, 1000);
   }
   _drawHighlight = () => {
     if (this.rectData && this.rectData.length != 0 && this.video) {
@@ -34,7 +34,7 @@ class App extends Component {
   _renderCanvas = () => {
     this._renderImage();
     this._drawHighlight();
-    // requestAnimationFrame(this._renderCanvas);
+    requestAnimationFrame(this._renderCanvas);
   };
   _renderImage = () => {
     this.render.height = this.video.videoHeight;
@@ -52,7 +52,7 @@ class App extends Component {
     // });
     // this.download(data.replace(/^data:image\/png;base64,/, ""));
     axios
-      .post("http://localhost:1234/checkin", {
+      .post("https://pazi-api.herokuapp.com/checkin", {
         data
       })
       .then(response => {
@@ -89,7 +89,7 @@ class App extends Component {
           crossOrigin="anonymous"
         >
           <source
-            src="https://res.cloudinary.com/linhsdt/video/upload/v1532229369/image_from_ios_msfszi.mov"
+            src="https://res.cloudinary.com/linhsdt/video/upload/v1532234481/1080_uzdurp.mp4"
             type="video/mp4"
           />
           Your browser does not support HTML5 video.
