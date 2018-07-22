@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { Avatar } from 'react-native-elements';
 
+import Images from '../../assets/images'
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -23,7 +25,7 @@ const Profile = props => (
       <Avatar
         large
         rounded
-        source={{ uri: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg' }}
+        source={Images.userImage}
         activeOpacity={0.7}
       />
     </View>

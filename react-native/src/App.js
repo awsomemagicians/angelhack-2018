@@ -17,4 +17,6 @@ const App = () => (
   </Provider>
 );
 
+console.disableYellowBox = true
+
 export default withAssetsLoading(App);
