@@ -1,0 +1,7 @@
+flow-typed/
+coverage/
+ios/
+android/
+scripts/
+docs/
+storybook/storyLoader.js
